@@ -1,0 +1,174 @@
+main{
+    background-color: lightyellow;
+    max-width: 100%;
+}
+
+header{
+    background-color: rgb(137, 135, 255);
+    position: relative;
+    height: 115px;
+    font-style: italic;
+
+}
+
+h1{
+    position: absolute;
+    left: 36px;
+    top:1px;
+    font-size: 50px;
+    
+}
+
+h1:hover{
+    /*transform: scale(0.5);*/
+    /*transform: rotate(45deg);*/
+    transform:translate(-45px,-25px);
+}
+
+
+nav{
+    position: absolute;
+    right: 20px;
+    top: 35px
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+nav a:hover{
+    color:rgb(180, 105, 105);
+    text-decoration: underline;
+}
+
+
+.contenedor_limite{
+    background-color: rgb(247, 246, 209);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 8px;
+}
+
+.card{
+    background-color: rgba(137, 135, 255);
+    width:300px;
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px;
+}
+
+.color{
+    color:black;
+}
+
+.color:hover{
+    color:rgb(67, 67, 129);
+}
+
+.contenedor_carousel{
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.contenedor_padre{
+  display: flex;  
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.card p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer{
+    background-color: rgb(137, 135, 255);
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.divFoot{
+    background-color: lightyellow;
+    margin: 15px;
+    border: 2px solid;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width:675px) {
+    h1{
+        font-size: 35px;
+    }
+
+    nav{
+        position: absolute;
+        left: 0px;
+        top: 50px
+    }
+
+    body{
+        background-color: rgb(137, 135, 255);
+    }
+
+    .divFooter{
+        position: absolute;
+        text-align: center;
+
+    }
+
+}
+
+.parent {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+    
+
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+
+.div1 img{
+    width: 100%;
+}
+
+
+.div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.div2 img{
+    width: 100%;
+}
+
+.div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.div3 img{
+    width: 100%;
+}
+
